@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage';
@@ -11,6 +12,7 @@ import SearchPage from './components/SearchPage/SearchPage';
 
 
 function App() {
+  // eslint-disable-next-line no-unused-vars  
   const navigate = useNavigate();
   return (
     <>

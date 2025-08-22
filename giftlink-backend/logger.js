@@ -4,16 +4,22 @@ const pino = require('pino');
 let logger;
 
 if (process.env.NODE_ENV !== 'production') {
-    // In non-production environments, log to the console
-    logger = pino({
-        level: 'debug',
-        transport: {
-            target: "pino-pretty",
-        },
-    });
+  // In non-production environments, log to the console in pretty format
+  logger = pino({
+    level: 'debug',
+    transport: {
+      target: 'pino-pretty',
+      options: {
+        colorize: true,
+        translateTime: 'yyyy-mm-dd HH:MM:ss.l o',
+      },
+    },
+  });
 } else {
-    // production
-    logger = pino();
+  // In production, plain JSON logging
+  logger = pino({
+    level: 'info',
+  });
 }
 
 module.exports = logger;

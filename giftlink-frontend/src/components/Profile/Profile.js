@@ -1,3 +1,14 @@
+/* jshint esversion: 8 */
+const express = require('express');
+const router = express.Router();
+const connectToDatabase = require('../models/db');
+const logger = require('../logger');
+
+// Get all gifts
+router.get('/', async (req, res, next) => {
+    // ...
+});
+
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './Profile.css'

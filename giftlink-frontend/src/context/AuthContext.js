@@ -11,6 +11,8 @@ router.get('/', async (req, res, next) => {
 });
 
 import React, { createContext, useState, useContext } from 'react';
+import logger from './logger';
+
 
 const AppContext = createContext();
 

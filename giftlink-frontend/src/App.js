@@ -9,7 +9,8 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import DetailsPage from './components/DetailsPage/DetailsPage';
 import SearchPage from './components/SearchPage/SearchPage';
-import logger from '../logger';
+import logger from './logger';
+
 
 
 function App() {

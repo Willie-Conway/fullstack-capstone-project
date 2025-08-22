@@ -20,7 +20,7 @@ import { useAppContext } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 import './RegisterPage.css';
-import logger from '../logger';
+
 
 
 function RegisterPage() {

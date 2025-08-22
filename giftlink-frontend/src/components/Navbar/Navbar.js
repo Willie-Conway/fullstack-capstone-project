@@ -13,7 +13,7 @@ import React, { useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import {urlConfig} from '../../config';
 import { useAppContext } from '../../context/AuthContext';
-import logger from '../logger';
+
 
 
 export default function Navbar() {

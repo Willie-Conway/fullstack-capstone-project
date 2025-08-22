@@ -18,7 +18,7 @@ import { useAppContext } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 import './LoginPage.css';
-import logger from '../logger';
+
 
 
 function LoginPage() {

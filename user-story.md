@@ -243,6 +243,4 @@ Then the application should be live
 And function as expected
 ```
 
----
 
-Do you want me to also **export this in GitHub Issues import CSV format** so you can upload straight into your project board?

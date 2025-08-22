@@ -12,6 +12,8 @@ router.get('/', async (req, res, next) => {
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {urlConfig} from '../../config';
+import logger from '../../logger';
+
 
 
 

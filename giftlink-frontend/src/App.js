@@ -1,4 +1,3 @@
-/* jshint esversion: 8 */
 import React from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage';
@@ -9,25 +8,25 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import DetailsPage from './components/DetailsPage/DetailsPage';
 import SearchPage from './components/SearchPage/SearchPage';
-import logger from './logger';
-
 
 
 function App() {
+// eslint-disable-next-line no-unused-vars
   const navigate = useNavigate();
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/app" element={<MainPage />} />
-        <Route path="/app/login" element={<LoginPage />} />
-        <Route path="/app/register" element={<RegisterPage />} />
-        <Route path="/app/details" element={<DetailsPage />} />
-        <Route path="/app/search" element={<SearchPage />} />
-      </Routes>
-    </>
+
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/app" element={<MainPage />} />
+          <Route path="/app/login" element={<LoginPage/>} />
+          <Route path="/app/register" element={<RegisterPage />} />
+          <Route path="/app/product/:productId" element={<DetailsPage/>} />
+          <Route path="/app/search" element={<SearchPage/>} />
+
+        </Routes>
+        </>
   );
 }
-
 export default App;

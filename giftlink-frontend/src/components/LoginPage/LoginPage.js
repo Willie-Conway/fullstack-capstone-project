@@ -1,14 +1,3 @@
-/* jshint esversion: 8 */
-const express = require('express');
-const router = express.Router();
-const connectToDatabase = require('../models/db');
-// const logger = require('../logger');
-
-// Get all gifts
-router.get('/', async (req, res, next) => {
-    // ...
-});
-
 import React, { useState,useEffect } from 'react';
 //Step 1 - Task 1
 import {urlConfig} from '../../config';
@@ -18,10 +7,6 @@ import { useAppContext } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 import './LoginPage.css';
-import logger from '../../logger';
-
-
-
 
 function LoginPage() {
     const [email, setEmail] = useState('');

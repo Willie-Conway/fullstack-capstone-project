@@ -1,22 +1,7 @@
-/* jshint esversion: 8 */
-const express = require('express');
-const router = express.Router();
-const connectToDatabase = require('../models/db');
-// const logger = require('../logger');
-
-// Get all gifts
-router.get('/', async (req, res, next) => {
-    // ...
-});
-
 import React, { useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import {urlConfig} from '../../config';
 import { useAppContext } from '../../context/AuthContext';
-import logger from '../../logger';
-
-
-
 
 export default function Navbar() {
     const { isLoggedIn, setIsLoggedIn, userName, setUserName } = useAppContext();

@@ -1,9 +1,4 @@
-// AuthContext.js
-/* jshint esversion: 8 */
 import React, { createContext, useState, useContext } from 'react';
-import logger from '../logger';
-
-
 
 const AppContext = createContext();
 

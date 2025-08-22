@@ -14,6 +14,8 @@ import { useNavigate } from "react-router-dom";
 import './Profile.css'
 import {urlConfig} from '../../config';
 import { useAppContext } from '../../context/AuthContext';
+import logger from '../logger';
+
 
 const Profile = () => {
   const [userDetails, setUserDetails] = useState({});
